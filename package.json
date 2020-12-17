@@ -1,7 +1,7 @@
 {
-  "name": "express-api-template",
+  "name": "r-gear-api",
   "version": "0.0.1",
-  "description": "",
+  "description": "This is the API for the R Employee Gear Website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
