@@ -1,6 +1,6 @@
 # R Gear: An e-commerce site for Rango and Remington Employee Gear
 
-This repo holds the code for the server that communicates with the R Gear Client. It allows employees of Rango and Remington to purchase branded gear for
+This repo holds the code for the server that communicates with the R Gear Client. It allows employees of Rango and Remington to purchase branded gear to wear on the job or at home.
 
 ## Important Links
 
@@ -45,6 +45,4 @@ More routes will be added soon
 
 #### ERD:
 
-```
-ERD will go here
-```
+![ERD Version 1](https://i.imgur.com/ZvvYOO1.png)
