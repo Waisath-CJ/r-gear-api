@@ -5,7 +5,7 @@ This repo holds the code for the server that communicates with the R Gear Client
 ## Important Links
 
 - [Client Repo](https://github.com/Waisath-CJ/r-gear-client)
-- [Deployed API]()
+- [Deployed API](https://fierce-waters-36807.herokuapp.com/)
 - [Deployed Client](https://waisath-cj.github.io/r-gear-client)
 
 ## Planning Story
