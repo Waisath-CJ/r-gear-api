@@ -14,7 +14,7 @@ router.post('/products', requiresToken, (req, res, next) => {
   productInfo.owner = req.user.id
 
   Product.create(productInfo)
-    .then(product => res.status(201).json(product))
+    .then(product => res.status(201).json({ product: product }))
     .catch(next)
 })
 
@@ -36,7 +36,7 @@ router.get('/products', requiresToken, (req, res, next) => {
       })
       return newProducts
     })
-    .then(products => res.json(products))
+    .then(products => res.json({ products: products }))
     .catch(next)
 })
 
@@ -47,17 +47,16 @@ router.get('/products/:product_id', requiresToken, (req, res, next) => {
     .populate('owner')  
     .then(handle404)
     .then(product => {
-      const newProduct = []
-      newProduct.push({
+      const newProduct = {
         _id: product._id,
         name: product.name,
         description: product.description,
         price: product.price,
         owner: product.owner.email
-      })
+      }
       return newProduct
     })
-    .then(product => res.json(product))
+    .then(product => res.json({ product: product }))
     .catch(next)
 })
 
